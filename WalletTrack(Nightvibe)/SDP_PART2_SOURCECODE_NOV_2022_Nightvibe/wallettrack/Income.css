@@ -1,0 +1,182 @@
+:root{
+	--c1:#18cbf8;
+	--c2:#fff;
+	--c3:#222429;
+    --c4:#df5d9a;
+    --c5:#0c08f1;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #f1e5ff;
+}
+input, select, textarea, button{
+    width: 100%;
+}
+
+/* Sidebar */
+
+.sidebar img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+} 
+
+.sidebar h2 span{
+    color:var(--c2);
+}
+
+.wrapper{
+    text-align: center;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+  
+.wrapper .sidebar{
+    width: 200px;
+    height: 100%;
+    background: var(--c1);
+    position: fixed;
+}
+
+.wrapper .sidebar h2{
+    color: var(--c3);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.wrapper .sidebar ul li{
+    padding: 15px;
+}    
+
+.wrapper .sidebar ul li a{
+    color: var(--c3);
+    display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background-color: var(--c5);
+}
+    
+.wrapper .sidebar ul li:hover a{
+    color: #fff;
+}
+
+/* Left */
+.left{
+    margin-left: 200px;
+}
+.left h1{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* Income Record */
+
+.IncomeRecord {
+    padding-top: 30px;
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
+    white-space: nowrap; 
+}
+
+.IncomeRecord  td,.IncomeRecord  th{
+	padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.IncomeRecord tr:nth-child(odd){
+	background-color:var(--c2);
+	color: var(--c3);
+}
+
+.IncomeRecord tr:nth-child(even){
+	background-color:var(--c1);
+	color: var(--c3);
+}
+
+.IncomeRecord a:hover{
+    text-decoration: underline;
+}
+
+/* Insert Income */
+
+.insertIncome {
+    padding-top: 30px;
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
+    white-space: nowrap; 
+}
+
+.insertIncome  td,.insertIncome  th{
+	padding: 5px;
+    border: 1px solid black;
+}
+
+.insertIncome tr:nth-child(odd){
+	background-color:var(--c1);
+	color: var(--c3);
+}
+.insertIncome tr:nth-child(even){
+	background-color:var(--c2);
+	color: var(--c3);
+}
+
+.insertIncome textarea{
+    width: 20rem;
+    height: 5rem;
+}
+
+/* Edit Income */
+
+.EditIncome {
+    padding-top: 30px;
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
+    white-space: nowrap; 
+}
+
+.EditIncome  td,.EditIncome  th{
+	padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.EditIncome tr:nth-child(odd){
+	background-color:var(--c1);
+	color: var(--c3);
+}
+
+.EditIncome tr:nth-child(even){
+	background-color:var(--c2);
+	color: var(--c3);
+}
+
+.EditIncome a:hover{
+    text-decoration: underline;
+}
+
+.EditIncome textarea{
+    width: 20rem;
+    height: 5rem;
+}
